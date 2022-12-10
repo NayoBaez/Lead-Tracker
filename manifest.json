@@ -1,12 +1,11 @@
 {
-    "manifest_version": 3,
-    "version": "1.0",
-    "name": "Leads tracker",
-    "action": {
-        "default_popup": "index.html",
-        "default_icon": "icon.png"
-    },
-    "permissions": [
-        "tabs"
-    ]
+  "manifest_version": 3,
+  "version": "1.0",
+  "name": "Leads Tracker",
+  "action": {
+    "default_popup": "index.html",
+    "default_icon": "icon.png"
+  },
+  "description": "This lead tracker helps you save time by storing your leads onto your local storage with one click of a button.",
+  "permissions": ["tabs"]
 }
