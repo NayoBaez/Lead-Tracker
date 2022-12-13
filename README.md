@@ -19,7 +19,8 @@ HTML, CSS & Javascript
 
 
 ```bash
-  No installation Required
+  Installation Required 
+  On google Chrome browser
 ```
     
 ## 🔗 Let's Connect
