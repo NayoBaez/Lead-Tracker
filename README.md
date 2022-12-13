@@ -4,6 +4,14 @@
 
 This lead tracker helps you save time by storing your leads onto your local storage with one click of a button. Developed in raw JavaScript using the LocalStorage() property to store the browsers data locally. The data is fetched from the Chrome API, turned into a string with JSON.stringify then parsed back into an array with the JSON.parse property and rendered out onto the DOM using a For loop.
 
+## Features in progress:
+
+- New Interface 
+- Copy on click 
+- Categorize links in to custom collection
+- Drag & Drog to organize links 
+- Delete button per List item 
+
 <img align="right" alt="portfolio" width="350" src="https://raw.githubusercontent.com/NayoBaez/Lead-Tracker/main/_project%20screenshots%20Lead%20tracker.png"></img>
 
 ## Tech Stack
