@@ -12,7 +12,7 @@ This lead tracker helps you save time by storing your leads onto your local stor
 - Drag & Drog to organize links 
 - Delete button per List item 
 
-<img align="right" alt="portfolio" width="350" src="https://raw.githubusercontent.com/NayoBaez/Lead-Tracker/main/_project%20screenshots%20Lead%20tracker.png"></img>
+<img align="right" alt="portfolio" width="350" src="https://raw.githubusercontent.com/NayoBaez/Lead-Tracker/main/Lead%20Tracker.png"></img>
 
 ## Tech Stack
 
