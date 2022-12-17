@@ -27,14 +27,15 @@ function render(leads) {
                 <a target='_blank' href='${leads[i]}'>
                     ${leads[i]}
                 </a>
-                <button class="edit-link">Edit</button>
-                <button class="copy-link">Copy</button>
-                <button class="remove-link">Delete</button>
-                <button class="drag-link">Drag</button>
+                <button class="edit-link" data-index="${i}">Edit</button>
+                <button class="copy-link" data-index="${i}">Copy</button>
+                <button class="remove-link" data-index="${i}">Delete</button>
+                <button class="drag-link" data-index="${i}">Drag</button>
             </li>
         `;
   }
   ulEl.innerHTML = listItems;
+  addListeners();
 }
 
 deleteBtn.addEventListener("click", function () {
@@ -49,3 +50,29 @@ inputBtn.addEventListener("click", function () {
   localStorage.setItem("myLeads", JSON.stringify(myLeads));
   render(myLeads);
 });
+
+function addListeners() {
+  {
+    const removeLinkBtn = document.querySelectorAll(".remove-link");
+    removeLinkBtn.forEach((btn) => {
+      btn.addEventListener("click", function (event) {
+        event.stopPropagation();
+        console.log(event.target);
+        alert("Removed Link");
+        const index = event.target.dataset.index;
+        removeItem(index);
+      });
+    });
+  }
+}
+
+function removeItem(index) {
+  //remove index item
+  myLeads.splice(index, 1);
+  // remove from Local storage (set new array)
+  localStorage.setItem("myLeads", JSON.stringify(myLeads));
+  //console.log index
+  console.log(`The index is ${index} `);
+  // then just update the page with the modified item list
+  render(myLeads);
+}
