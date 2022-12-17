@@ -27,16 +27,19 @@ function render(leads) {
                 <a target='_blank' href='${leads[i]}'>
                     ${leads[i]}
                 </a>
-                <button class="edit-link" data-index="${i}">Edit</button>
                 <button class="copy-link" data-index="${i}">Copy</button>
                 <button class="remove-link" data-index="${i}">Delete</button>
-                <button class="drag-link" data-index="${i}">Drag</button>
             </li>
         `;
   }
   ulEl.innerHTML = listItems;
   addListeners();
 }
+// ** Add these buttons below later once Remove & Copy work
+// <button class="edit-link" data-index="${i}">Edit</button>
+// <button class="drag-link" data-index="${i}">Drag</button>;
+// ** Add listcreator in index.html
+// <button id="create-list">CREATE LIST</button>
 
 deleteBtn.addEventListener("click", function () {
   localStorage.clear();
@@ -61,6 +64,19 @@ function addListeners() {
         alert("Removed Link");
         const index = event.target.dataset.index;
         removeItem(index);
+      });
+    });
+  }
+
+  {
+    const copyLinkBtn = document.querySelectorAll(".copy-link");
+    copyLinkBtn.forEach((btn) => {
+      btn.addEventListener("click", function (event) {
+        event.stopPropagation();
+        console.log(event.target);
+        alert("Copied Link");
+        const index = event.target.dataset.index;
+        console.log(index);
       });
     });
   }
