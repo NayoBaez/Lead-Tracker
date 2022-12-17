@@ -27,6 +27,10 @@ function render(leads) {
                 <a target='_blank' href='${leads[i]}'>
                     ${leads[i]}
                 </a>
+                <button class="edit-link">Edit</button>
+                <button class="copy-link">Copy</button>
+                <button class="remove-link">Delete</button>
+                <button class="drag-link">Drag</button>
             </li>
         `;
   }
