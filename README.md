@@ -1,8 +1,8 @@
 [![MasterHead](https://raw.githubusercontent.com/NayoBaez/Lead-Tracker/main/GITHUB%20README%20BANNERS%20LEADTRACKER.png)](https://nayobaez.com)
 
-# LEAD TRACKER
+# LINK SAVER
 
-This lead tracker helps you save time by storing your leads onto your local storage with one click of a button. Developed in raw JavaScript using the LocalStorage() property to store the browsers data locally. The data is fetched from the Chrome API, turned into a string with JSON.stringify then parsed back into an array with the JSON.parse property and rendered out onto the DOM using a For loop.
+This link saver & organizer helps you save time by storing your links onto your local storage with one click of a button. Developed in raw JavaScript using the LocalStorage() property to store the browsers data locally. The data is fetched from the Chrome API, turned into a string with JSON.stringify then parsed back into an array with the JSON.parse property and rendered out onto the DOM using a For loop.
 
 ## Features in progress:
 
