@@ -64,7 +64,7 @@ a {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
-  max-width: 20ch;
+  max-width: 25ch;
   margin-right: 70px;
 }
 
@@ -76,9 +76,7 @@ a {
   border: none;
 }
 
-.fa-trash,
-.fa-copy,
-.fa-pen,
-.fa-bars {
-  color: white;
+.material-symbols-outlined {
+  font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 48;
+  pointer-events: none;
 }

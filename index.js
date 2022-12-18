@@ -27,8 +27,12 @@ function render(leads) {
                 <a class="link" target="_blank" href="${leads[i]}">
                     ${leads[i]}
                 </a>
-                <button class="copy-link" data-index="${i}">Copy</button>
-                <button class="remove-link" data-index="${i}">Delete</button>
+                <button class="copy-link" data-index="${i}"><span class="material-symbols-outlined">
+content_copy
+</span></button>
+                <button class="remove-link" data-index="${i}"><span class="material-symbols-outlined">
+delete
+</span></i></button>
             </li>
         `;
   }
@@ -61,7 +65,6 @@ function addListeners() {
       btn.addEventListener("click", function (event) {
         event.stopPropagation();
         console.log(event.target);
-        alert("Removed Link");
         const index = event.target.dataset.index;
         removeLink(index);
       });
@@ -91,6 +94,7 @@ function removeLink(index) {
   console.log(`The index is ${index} `);
   // then just update the page with the modified item list
   render(myLeads);
+  alert("Removed Link");
 }
 
 function copyLink(index) {
@@ -99,7 +103,7 @@ function copyLink(index) {
   navigator.clipboard.writeText(linkEl[index].innerHTML).then(() => {
     // Alert the user that the action took place.
     //pop up copied
-    alert(`Copied to clipboard ${index}`);
+    alert(`Copied to clipboard`);
   });
 }
 
