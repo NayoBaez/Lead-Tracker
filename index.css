@@ -64,7 +64,7 @@ a {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
-  max-width: 11ch;
+  max-width: 20ch;
   margin-right: 70px;
 }
 
@@ -73,7 +73,6 @@ a {
 .copy-link,
 .drag-link {
   background: #b2acab;
-  margin-left: 30px;
   border: none;
 }
 
