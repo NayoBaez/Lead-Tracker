@@ -24,7 +24,7 @@ function render(leads) {
   for (let i = 0; i < leads.length; i++) {
     listItems += `
             <li>
-                <a class='link' target='_blank' href='${leads[i]}'>
+                <a class="link" target="_blank" href="${leads[i]}">
                     ${leads[i]}
                 </a>
                 <button class="copy-link" data-index="${i}">Copy</button>
@@ -63,7 +63,7 @@ function addListeners() {
         console.log(event.target);
         alert("Removed Link");
         const index = event.target.dataset.index;
-        removeItem(index);
+        removeLink(index);
       });
     });
   }
@@ -75,13 +75,13 @@ function addListeners() {
         event.stopPropagation();
         console.log(event.target);
         const index = event.target.dataset.index;
-        copyItem(index);
+        copyLink(index);
       });
     });
   }
 }
 
-function removeItem(index) {
+function removeLink(index) {
   index = +index;
   //remove index item
   myLeads.splice(index, 1);
@@ -93,15 +93,13 @@ function removeItem(index) {
   render(myLeads);
 }
 
-function copyItem(index) {
+function copyLink(index) {
   index = +index;
-  const linkEl = document.querySelectorAll("link", index);
-  navigator.clipboard.writeText(linkEl).then(() => {
+  const linkEl = document.querySelectorAll(".link");
+  navigator.clipboard.writeText(linkEl[index].innerHTML).then(() => {
     // Alert the user that the action took place.
     //pop up copied
-    alert("Copied to clipboard");
-    console.log(linkEl);
-    console.log(index);
+    alert(`Copied to clipboard ${index}`);
   });
 }
 
