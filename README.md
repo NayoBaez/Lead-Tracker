@@ -30,8 +30,9 @@ HTML, CSS & Javascript
 
 
 ```bash
-  Installation Required in Google Chrome browser
-  Click on the green project link button here below.
+  Installation Required => Google Chrome browser
+  
+  Click on the green "Project Link" button here below.
   It will take you directly to the Google Chrome webstore.
 ```
     
