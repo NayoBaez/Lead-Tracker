@@ -12,7 +12,7 @@ This link saver & organizer helps you save time by storing your links onto your 
 - Drag & Drog to organize links 
 - Delete button per List item 
 
-<img align="right" alt="portfolio" width="350" src="https://raw.githubusercontent.com/NayoBaez/Lead-Tracker/main/Lead%20Tracker.png"></img>
+<img align="right" alt="portfolio" width="350" src="https://raw.githubusercontent.com/NayoBaez/Link-Saver/main/screenshot%20linksaver.png"></img>
 
 ## Tech Stack
 
